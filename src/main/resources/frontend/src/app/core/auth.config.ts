@@ -6,5 +6,5 @@ export const authConfig: AuthConfig = {
   clientId: 'oauth2-demo-pcke-client',
   responseType: 'code',
   strictDiscoveryDocumentValidation: true,
-  scope: 'openid profile email offline_access'
+  scope: 'openid profile email offline_access roles'
 }

@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
 })
 export class AppService {
 
-  private base_url = 'http://localhost:8080/api';
+  private base_url = 'http://localhost:8080/microservice1';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,4 +16,5 @@ export class AppService {
     return this.httpClient.get(`${this.base_url}/home`,
       {headers, responseType: 'text'});
   }
+
 }
